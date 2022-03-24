@@ -9,6 +9,7 @@ describe('Teste o componente <About.js />.', () => {
   test('Teste se a página contém as informações sobre a Pokédex', () => {
     const { history } = renderWithRouter(<App />);
     history.push('/About');
+
     // Acessa os elementos
     const infoPokedex = screen.getByText(/This application simulates a Pokédex/i);
     // Interage com esses elementos - se necessario
