@@ -14,29 +14,38 @@ describe('Teste o componente <Pokemon.js />', () => {
     () => {
       renderWithRouter(<App />);
       // acessar os elementos
-      const pokemonName = screen.getByTestId(nameId);
-      const pokemonType = screen.getByTestId(typeId);
-      const pokemonWeight = screen.getByTestId(weightId);
+      const pokemonName = screen.getByTestId(nameId); // pego o nome pelo testId
+      const pokemonType = screen.getByTestId(typeId); // pego o tipo pelo testId
+      const pokemonWeight = screen.getByTestId(weightId); // pego o peso pelo testId
+      // console.log(pokemonType);
 
-      const value = pokemonWeight.innerHTML;
+      const value = pokemonWeight.innerHTML; // pego o texto da imagem - valor
       // console.log(value);
-      const name = pokemonName.innerHTML;
+      const name = pokemonName.innerHTML; // pego o texto da imagem - nome
       // console.log(name);
-      const type = pokemonType.innerHTML;
-      // console.log(type);
+      const type = pokemonType.innerHTML; // pego o texto da imagem - tipo
+      // console.log(type); // Eletric
 
-      const typePokemon = screen.getAllByText(type)[0];
+      const typePokemon = screen.getAllByText(`${type}`)[0]; // vejo se o tal texto ta na tela
       // console.log(typePokemon);
-      const textWeight = screen.getByText(value);
-      const imgPokemon = screen.getByAltText(`${name} sprite`);
-      // interagir com esses elementos
 
+      const textWeight = screen.getByText(value); // vejo se o tal texto ta na tela
+      const altImgPokemon = screen.getByAltText(`${name} sprite`); // vejo se a tal imagem ta na tela
+      // const imgPokemon = altImgPokemon.src;
+      // console.log(imgPokemon);
+      // interagir com esses elementos
       // testar
       expect(pokemonName).toBeInTheDocument();
-      expect(typePokemon).toBeInTheDocument();
+      expect(pokemonType).toBeInTheDocument();
       expect(pokemonWeight).toBeInTheDocument();
+
+      // expect(pokemonType).toHaveTextContent(`${type}`);
+      // expect(type).toBeInTheDocument();
+      expect(typePokemon).toBeInTheDocument();
+
       expect(textWeight).toBeInTheDocument();
-      expect(imgPokemon).toBeInTheDocument();
+      expect(altImgPokemon).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png');
+      expect(altImgPokemon).toBeInTheDocument();
     });
   test('Teste se card do Pokémon indicado na Pokédex contém link de navegação',
     () => {
@@ -69,7 +78,7 @@ describe('Teste o componente <Pokemon.js />', () => {
     // interagir com esses elementos
     userEvent.click(linkMoreDetails);
     const newUrl = history.location.pathname;
-    console.log(newUrl);
+    // console.log(newUrl);
     // testar
     expect(newUrl).toBe('/pokemons/25');
   });

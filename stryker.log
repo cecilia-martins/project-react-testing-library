@@ -1,0 +1,400 @@
+06:50:13 (27320) INFO ConfigReader Using stryker.conf.json
+06:50:14 (27320) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+06:50:13 (27320) DEBUG ConfigReader Loading config /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker.conf.json
+06:50:13 (27320) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker.conf.json"
+}
+06:50:13 (27320) DEBUG PluginLoader Loading @stryker-mutator/* from /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator
+06:50:13 (27320) DEBUG PluginLoader Loading plugin "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+06:50:13 (27320) DEBUG PluginLoader Loading plugin "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+06:50:13 (27320) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+06:50:14 (27320) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+06:50:14 (27320) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+06:50:14 (27320) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+06:50:14 (27320) INFO InputFileResolver Found 7 of 66 file(s) to be mutated.
+06:50:14 (27320) DEBUG InputFileResolver All input files: [
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker.log",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.babelrc.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.eslintignore",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.eslintrc.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.github/CODEOWNERS",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.github/workflows/main.yml",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.gitignore",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.npmrc",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stylelintignore",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stylelintrc.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.trybe/requirements.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/README.md",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/package-lock.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/package.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/favicon.ico",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/index.html",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/logo192.png",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/logo512.png",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/manifest.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/robots.txt",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/public/star-icon.svg",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/App.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/App.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/About.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/Button.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/NotFound.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/Pokedex.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/Pokemon.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/PokemonDetails.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/about.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/button.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/favorite-pokemons.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/index.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/not-found.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/pokedex.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/pokemon-details.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/pokemon.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/data.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/index.css",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/index.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/logo.svg",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/renderWithRouter.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/serviceWorker.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/services/pokedexService.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/setupTests.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/About.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/App.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/types/index.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/About.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/App.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/testefalhando.png",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/testepassando.png",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/texto.txt",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/trybe.yml"
+]
+06:50:14 (27320) DEBUG InputFileResolver Files to mutate: [
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/App.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/About.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/NotFound.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/Pokedex.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/Pokemon.js",
+  "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/src/components/PokemonDetails.js"
+]
+06:50:14 (27320) DEBUG TemporaryDirectory Using temp directory "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp"
+06:50:14 (27320) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+06:50:14 (27320) INFO InitialTestExecutor Starting initial test run. This may take a while.
+06:50:14 (27320) DEBUG Sandbox Creating a sandbox for files in /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625
+06:50:14 (27320) DEBUG Sandbox Creating test runner 0
+06:50:14 (27320) DEBUG ChildProcessProxy Starting /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 27346
+06:50:14 (27320) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+06:50:14 (27346) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625
+06:50:14 (27346) DEBUG PluginLoader Loading @stryker-mutator/* from /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator
+06:50:14 (27346) DEBUG PluginLoader Loading plugin "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+06:50:14 (27346) DEBUG PluginLoader Loading plugin "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+06:50:14 (27346) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+06:50:14 (27346) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+06:50:14 (27346) DEBUG PluginLoader Loading plugins /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+06:50:14 (27346) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+06:50:14 (27346) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+06:50:14 (27346) DEBUG JestTestRunner Project root is /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625
+06:50:14 (27346) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+06:50:21 (27320) DEBUG ChildProcessProxy Disposing of worker process 27346
+06:50:21 (27320) DEBUG ChildProcessProxy Kill 27346
+06:50:22 (27320) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Teste o componente <Pokemon.js /> Teste se é renderizado um card com informações de determinado pokémon
+		TestingLibraryElementError: Unable to find an element by: [data-testid="Electric"]
+
+[36m<body>[39m
+  [36m<div>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m"App"[39m
+    [36m>[39m
+      [36m<h1>[39m
+        [0mPokédex[0m
+      [36m</h1>[39m
+      [36m<nav>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/"[39m
+        [36m>[39m
+          [0mHome[0m
+        [36m</a>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/about"[39m
+        [36m>[39m
+          [0mAbout[0m
+        [36m</a>[39m
+        [36m<a[39m
+          [33mclass[39m=[32m"link"[39m
+          [33mhref[39m=[32m"/favorites"[39m
+        [36m>[39m
+          [0mFavorite Pokémons[0m
+        [36m</a>[39m
+      [36m</nav>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"pokedex"[39m
+      [36m>[39m
+        [36m<h2>[39m
+          [0mEncountered pokémons[0m
+        [36m</h2>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"pokemon"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"pokemon-overview"[39m
+          [36m>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-name"[39m
+            [36m>[39m
+              [0mPikachu[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-type"[39m
+            [36m>[39m
+              [0mElectric[0m
+            [36m</p>[39m
+            [36m<p[39m
+              [33mdata-testid[39m=[32m"pokemon-weight"[39m
+            [36m>[39m
+              [0mAverage weight: [0m
+              [0m6.0[0m
+              [0m [0m
+              [0mkg[0m
+            [36m</p>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/pokemons/25"[39m
+            [36m>[39m
+              [0mMore details[0m
+            [36m</a>[39m
+          [36m</div>[39m
+          [36m<img[39m
+            [33malt[39m=[32m"Pikachu sprite"[39m
+            [33msrc[39m=[32m"https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"[39m
+          [36m/>[39m
+        [36m</div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"pokedex-buttons-panel"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m""[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mAll[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mElectric[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mFire[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mBug[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mPoison[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mPsychic[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mNormal[0m
+          [36m</button>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"button-text filter-button"[39m
+            [33mdata-testid[39m=[32m"pokemon-type-button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mDragon[0m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"button-text pokedex-button"[39m
+          [33mdata-testid[39m=[32m"next-pokemon"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [0mPróximo pokémon[0m
+        [36m</button>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+[36m</body>[39m
+    at Object.getElementError (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+    at /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+    at /home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+    at getByTestId (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+    at Object.<anonymous> (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/.stryker-tmp/sandbox1606625/src/tests/Pokemon.test.js:28:34)
+    at Promise.then.completed (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+06:50:22 (27320) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Stryker.runMutationTest (/home/liah/TRYBE - PROJETOS/sd-019-c-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
