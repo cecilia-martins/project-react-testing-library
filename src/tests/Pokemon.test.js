@@ -38,9 +38,9 @@ describe('Teste o componente <Pokemon.js />', () => {
       expect(pokemonName).toBeInTheDocument();
       expect(pokemonType).toBeInTheDocument();
       expect(pokemonWeight).toBeInTheDocument();
-
       // expect(pokemonType).toHaveTextContent(`${type}`);
-      // expect(type).toBeInTheDocument();
+      expect(pokemonType).toContainHTML(`<p data-testid="pokemon-type">${type}</p>`);
+
       expect(typePokemon).toBeInTheDocument();
 
       expect(textWeight).toBeInTheDocument();
