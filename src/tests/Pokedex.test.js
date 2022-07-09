@@ -11,7 +11,6 @@ describe('Teste o componente <Pokedex.js />', () => {
     // acessa os elememntos
     const title = screen.getByRole('heading',
       { level: 2, name: /Encountered pokémons/i });
-    // interagi com esses elementos
     // testa
     expect(title).toBeInTheDocument();
   });
@@ -50,7 +49,6 @@ describe('Teste o componente <Pokedex.js />', () => {
     const btnPsychic = screen.getByRole('button', { name: /Psychic/i });
     const btnNormal = screen.getByRole('button', { name: /Normal/i });
     const btnDragon = screen.getByRole('button', { name: /Dragon/i });
-    // interagi com esses elementos
     // testa
     expect(btnAll).toBeInTheDocument();
     expect(btnElectric).toBeInTheDocument();
@@ -60,13 +58,11 @@ describe('Teste o componente <Pokedex.js />', () => {
     expect(btnPsychic).toBeInTheDocument();
     expect(btnNormal).toBeInTheDocument();
     expect(btnDragon).toBeInTheDocument();
-    // expect().toBeInTheDocument();
   });
   test('Teste se a Pokédex contém um botão para resetar o filtro', () => {
     renderWithRouter(<App />);
     // acessa os elememntos
     const typeBtn = screen.getAllByTestId('pokemon-type-button')[1];
-    // console.log(typeBtn);
     userEvent.click(typeBtn);
     expect(typeBtn).toBeInTheDocument();
     const btnAll = screen.getByRole('button', { name: /All/i });
